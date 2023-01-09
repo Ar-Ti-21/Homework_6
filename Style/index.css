@@ -267,6 +267,170 @@ header .d-flex {
     color: #ABABAB;
     text-transform: uppercase;
 }
+/*Страница-Область №7 конец*/
+
+/*Страница-Область №8 начало*/
+
+.area-8 {
+    padding: 79px 0 75px;
+    background: center / cover url("../Images/section8-img-01-background.png") no-repeat;
+    position: relative;
+    width: auto;
+
+    font-family: 'Vollkorn', serif;
+    font-size: 17px;
+    line-height: 22px;
+    color: #212121;
+}
+
+.area-8-all {
+    display: flex;
+    justify-content: center;
+}
+
+.area-8-cards-1 {
+    padding-right: 133px;
+}
+
+.area-8-cards-img-1 {
+    height: 65px;
+    margin: 0 0 26px;
+}
+
+address {
+    margin: 20px 0 0;
+}
+
+.area-8-cards-2 {
+    padding-right: 149px;
+}
+
+.area-8-cards-2 a {
+    margin: 20px 0 0;
+}
+
+.area-8-description {
+    margin: 22px 0 0;
+}
+
+.area-8-cards-img-2 {
+    height: 65px;
+    margin: 0 0 26px;
+    padding: 7px 0 0;
+}
+
+.area-8-zone {
+    display: inline-block;
+}
+
+.area-8-zone-1 {
+    margin: 19px 0 0;
+    display: flex;
+}
+
+.area-8-zone-2 {
+    margin: 11px 0 0;
+    display: flex;
+}
+
+.area-8-zone-3 {
+    margin: 11px 0 0;
+    display: flex;
+}
+
+.area-8-zone a img {
+    margin: 0 9px 0 0
+}
+/*Страница-Область №8 конец*/
+
+/*Страница-Область №8 начало*/
+.area-9 {
+    padding: 69px 0 75px;
+    background: #000000;
+}
+
+.area-9-form-firstname, .area-9-form-budget {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 564px;
+    height: 57px;
+    padding: 18px 0 17px 31px;
+}
+
+.area-9-form-email {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 564px;
+    height: 57px;
+    padding: 18px 0 17px 31px;
+}
+
+.area-9-form-messenger {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 564px;
+    height: 127px;
+    padding-top: 18px;
+    padding-left: 31px;
+    resize:none;
+}
+
+/*меняет цвет текста для placeholder*/
+.area-9 input::placeholder, textarea::placeholder {
+    color: #FFFFFF;
+}
+/*меняет цвет текста для placeholder*/
+
+.area-9-button {
+    border-top: 1px solid #7EC4BD;
+    border-bottom: 2px solid #7EC4BD;
+    border-left: 1px solid #7EC4BD;
+    border-right: 1px solid #7EC4BD;
+    width: 210px;
+    height: 53px;
+    margin: 22px auto 37px;
+    padding-top: 15px;
+}
+
+.area-9-button a {
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 22px;
+    color: #8BCAC3;
+}
+
+.area-9-logo-img {
+    width: 43px;
+    height: 46px;
+}
+
+.area-9-developers {
+    font-family: 'Vollkorn', serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF66;
+    opacity: 40%;
+    margin-top: 14px;
+}
 
 
 /*border: 1px solid red; /*для себя перемерить размеры и расстояния*/
