@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import 'common.css';
 
 /*Страница-Область №1 начало*/
@@ -7,7 +14,11 @@ header {
 }
 
 header .d-flex {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -17,12 +28,14 @@ header .d-flex {
 }
 
 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-.logo-img {
-    width: 155px;
-    height: 70px;
+.section1-img-01-logo {
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .nav-links {
@@ -33,7 +46,13 @@ header .d-flex {
     line-height: 20px;
     color: #404040;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .nav-links a {
@@ -45,6 +64,7 @@ header .d-flex {
 /*Страница-Область №2 начало*/
 .area-2 {
     position: relative;
+    overflow-wrap: break-word
 }
 
 .area-2-background-img {
@@ -53,6 +73,10 @@ header .d-flex {
     z-index: -1;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-2-close-icon {
@@ -61,6 +85,8 @@ header .d-flex {
     width: 52px;
     height: 52px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -26px;
 }
@@ -69,11 +95,11 @@ header .d-flex {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
-    line-height: 55px;
+    font-size: 34px;
+    line-height: 44px;
     color: #FFFFFF;
     text-transform: uppercase;
-    padding-top: 105px;
+    padding-top: 85px;
 }
 
 .area-2 p {
@@ -89,16 +115,16 @@ header .d-flex {
 /*Страница-Область №3 начало*/
 .area-3 {
     background: #FEFEC9;
-    padding: 60px 0 59px;
+    padding: 50px 15px 25px 15px;
 }
 
 .area-3-description {
-    width: 940px;
     margin: 0 auto 39px;
     font-family: 'Vollkorn', serif;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 20px;
     color: #47474F;
+    overflow-wrap: break-word
 }
 
 .area-3-button {
@@ -107,31 +133,70 @@ header .d-flex {
     border-bottom: 2px solid #47474F;
     border-left: 1px solid #47474F;
     border-right: 1px solid #47474F;
-    width: 159px;
-    height: 53px;
+    max-width: 159px;
+    width: 100%;
     margin: 0 auto;
     padding: 13px 34px 20px 34px;
     font-family: 'Vollkorn', serif;
     font-size: 16px;
     line-height: 20px;
     color: #47474F;
+    overflow-wrap: break-word
 }
 
 /*Страница-Область №3 конец*/
 
 /*Страница-Область №4 начало*/
 .area-4 {
-    padding: 79px 0 74px;
+    padding: 25px 0 25px;
+    overflow-wrap: break-word
+
+}
+
+.area-4-container-for-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .area-4-cards {
-    width: 300px;
-    margin: 0 10px;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    overflow-wrap: break-word
+
 }
 
 .area-4-cards-img {
     margin: 0 0 38px;
+    max-width: 300px;
+    height: 219px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-4-description {
@@ -139,30 +204,62 @@ header .d-flex {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
-    margin: 20px 0 0;
+    margin: 20px 0 20px;
 }
 
 /*Страница-Область №4 конец*/
 
 /*Страница-Область №5 начало*/
 .area-5 {
-    padding: 79px 0 89px;
+    padding: 25px 0 25px;
     background: #F5F5F5;
 }
 
 .area-5-container-for-cards {
-    margin: 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .area-5-cards {
-    margin: 0 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
     background: #FFFFFF;
+    margin: 0 0 20px;
     padding: 0 0 21px;
-    display: inline-block;
 }
 
 .area-5-cards-img {
+    max-width: 300px;
+    height: 300px;
     margin: 0 0 19px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-5-description {
@@ -171,22 +268,56 @@ header .d-flex {
     line-height: 20px;
     color: #47474F;
     margin: 4px 0 0;
+    overflow-wrap: break-word;
 }
 
 /*Страница-Область №5 конец*/
 
 /*Страница-Область №6 начало*/
 .area-6 {
-    padding: 79px 0 100px;
+    padding: 25px 0 25px;
+}
+
+.area-6-container-for-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .area-6-cards {
-    display: inline-block;
-    margin: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .change-photos-1 img, .change-photos-2 img, .change-photos-3 img, .change-photos-4 img {
-    margin: 0 0 19px;
+    margin: 20px 0 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    max-width: 220px;
+    height: 220px;
 }
 
 .area-6-description {
@@ -199,15 +330,24 @@ header .d-flex {
     margin: 6px 0 29px;
 }
 
-.area-6-social-icons Img {
+.area-6-social-icons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 6px
+}
+
+.area-6-social-icons svg {
     width: 29px;
-    height: 14px;
     background: #F5F5F5;
-    margin: 0 2px;
 }
 
 /*Эффект "hover" с заменой на цветную фото при наведении*/
 .change-photos-1 .change-photo-1 img, .change-photos-2 .change-photo-2 img, .change-photos-3 .change-photo-3 img, .change-photos-4 .change-photo-4 img {
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -217,35 +357,66 @@ header .d-flex {
 
 .change-photos-1:hover .change-photo-1:nth-of-type(1), .change-photos-2:hover .change-photo-2:nth-of-type(1), .change-photos-3:hover .change-photo-3:nth-of-type(1), .change-photos-4:hover .change-photo-4:nth-of-type(1) {
     display: none;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .change-photos-1:hover .change-photo-1:nth-of-type(2), .change-photos-2:hover .change-photo-2:nth-of-type(2), .change-photos-3:hover .change-photo-3:nth-of-type(2), .change-photos-4:hover .change-photo-4:nth-of-type(2) {
     display: block;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .change-photos-1:hover, .change-photos-2:hover, .change-photos-3:hover, .change-photos-4:hover {
     cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
+
 /*Эффект "hover" с заменой на цветную фото при наведении*/
 
 /*Страница-Область №6 конец*/
 
 /*Страница-Область №7 начало*/
-.area-7-all {
-    padding: 69px 0 98px;
+.area-7 {
+    padding: 25px 0 25px;
     background: #F5F5F5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.area-7-Vector-img {
-    padding: 0 0 65px;
+.area-7-svg {
+    margin: 0 auto 65px;
 }
 
 .area-7-container-for-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .area-7-text-1 {
@@ -253,11 +424,14 @@ header .d-flex {
     font-size: 26px;
     line-height: 33px;
     color: #333333;
-    width: 338px;
 }
 
 .area-7-container-for-cards img {
     margin: 10px 0 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-7-text-2 {
@@ -267,42 +441,65 @@ header .d-flex {
     color: #ABABAB;
     text-transform: uppercase;
 }
+
 /*Страница-Область №7 конец*/
 
 /*Страница-Область №8 начало*/
 
 .area-8 {
-    padding: 79px 0 75px;
+    padding: 25px 0 25px;
     background: center / cover url("../Images/section8-img-01-background.png") no-repeat;
     position: relative;
-    width: auto;
-
     font-family: 'Vollkorn', serif;
     font-size: 17px;
     line-height: 22px;
     color: #212121;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
 }
 
-.area-8-all {
+.area-8-container-for-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.area-8-cards-1 {
-    padding-right: 133px;
+.area-8 form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
+
 
 .area-8-cards-img-1 {
     height: 65px;
-    margin: 0 0 26px;
+    margin: 40px 0 26px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 address {
     margin: 20px 0 0;
-}
-
-.area-8-cards-2 {
-    padding-right: 149px;
 }
 
 .area-8-cards-2 a {
@@ -315,8 +512,12 @@ address {
 
 .area-8-cards-img-2 {
     height: 65px;
-    margin: 0 0 26px;
+    margin: 40px 0 26px;
     padding: 7px 0 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-8-zone {
@@ -325,29 +526,52 @@ address {
 
 .area-8-zone-1 {
     margin: 19px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .area-8-zone-2 {
     margin: 11px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .area-8-zone-3 {
     margin: 11px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-.area-8-zone a img {
-    margin: 0 9px 0 0
+.area-8-zone a svg {
+    margin: 0 9px 0 0;
 }
+
 /*Страница-Область №8 конец*/
 
 /*Страница-Область №8 начало*/
 .area-9 {
-    padding: 69px 0 75px;
+    padding: 25px 20px 25px 20px;
     background: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
+
+.area-9-form-firstname, .area-9-form-budget, .area-9-form-email,.area-9-form-messenger  {
+    max-width: 450px;
+    width: 100%;
+}
+
 
 .area-9-form-firstname, .area-9-form-budget {
     font-family: 'Vollkorn', serif;
@@ -356,11 +580,11 @@ address {
     line-height: 22px;
     color: #FFFFFF;
     text-align: left;
-
     background-color: rgba(255, 255, 255, 0.18);
-    width: 564px;
     height: 57px;
     padding: 18px 0 17px 31px;
+    word-break: break-all;
+
 }
 
 .area-9-form-email {
@@ -370,11 +594,12 @@ address {
     line-height: 22px;
     color: #FFFFFF;
     text-align: left;
-
     background-color: rgba(255, 255, 255, 0.2);
-    width: 564px;
     height: 57px;
-    padding: 18px 0 17px 31px;
+    /*padding: 18px  17px 31px;*/
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 31px;
 }
 
 .area-9-form-messenger {
@@ -384,19 +609,34 @@ address {
     line-height: 22px;
     color: #FFFFFF;
     text-align: left;
-
     background-color: rgba(255, 255, 255, 0.2);
-    width: 564px;
     height: 127px;
     padding-top: 18px;
     padding-left: 31px;
-    resize:none;
+    resize: none;
 }
 
 /*меняет цвет текста для placeholder*/
+.area-9 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.area-9 input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #FFFFFF;
+}
+
+.area-9 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.area-9 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
 .area-9 input::placeholder, textarea::placeholder {
     color: #FFFFFF;
 }
+
 /*меняет цвет текста для placeholder*/
 
 .area-9-button {
@@ -404,10 +644,12 @@ address {
     border-bottom: 2px solid #7EC4BD;
     border-left: 1px solid #7EC4BD;
     border-right: 1px solid #7EC4BD;
-    width: 210px;
-    height: 53px;
+    max-width: 210px;
+    width: 100%;
     margin: 22px auto 37px;
     padding-top: 15px;
+    padding-bottom: 15px;
+    overflow-wrap: break-word
 }
 
 .area-9-button a {
@@ -421,6 +663,10 @@ address {
 .area-9-logo-img {
     width: 43px;
     height: 46px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .area-9-developers {
