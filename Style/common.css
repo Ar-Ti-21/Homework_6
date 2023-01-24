@@ -65,7 +65,7 @@ body {
 }
 
 /*Оформление Hover, text-shadow, box-shadow*/
-.nav-links a:hover {
+.menu__item:hover, .nav-links {
     text-shadow: 0 0 0.5em #79c5bd, 0 0 0.5em #79c5bd, 0 0 0.5em #128d80;
     -webkit-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;

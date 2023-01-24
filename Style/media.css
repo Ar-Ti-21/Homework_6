@@ -5,14 +5,63 @@
 * Browsers: last 4 version
 */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     /*Область №1*/
+    .hamburger-menu {
+        display: none;
+    }
+
+    header {
+        padding: 18px 0;
+        background: #FFFFFF;
+    }
+
+    header .d-flex {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .d-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .section1-img-01-logo {
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
     .nav-links {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #404040;
+        text-transform: uppercase;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
+    }
+
+    .nav-links a {
+        padding: 0 17px;
     }
     /*Область №1*/
 
