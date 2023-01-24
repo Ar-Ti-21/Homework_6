@@ -63,16 +63,16 @@
     .nav-links a {
         padding: 0 17px;
     }
-    /*Область №1*/
 
+    /*Область №1*/
     /*Область №2*/
     .area-2 h1 {
         font-size: 44px;
         line-height: 55px;
         padding-top: 105px;
     }
-    /*Область №2*/
 
+    /*Область №2*/
     /*Область №3*/
     .area-3 {
         padding: 60px 0 59px;
@@ -83,8 +83,8 @@
         font-size: 18px;
         line-height: 25px;
     }
-    /*Область №3*/
 
+    /*Область №3*/
     /*Область №4*/
     .area-4 {
         padding: 79px 0 74px;
@@ -101,8 +101,8 @@
     .area-4-description {
         margin: 20px 0 0;
     }
-    /*Область №4*/
 
+    /*Область №4*/
     /*Область №5*/
     .area-5 {
         padding: 79px 0 89px;
@@ -121,12 +121,13 @@
         margin: 0;
         padding: 0 0 21px;
     }
-    /*Область №5*/
 
+    /*Область №5*/
     /*Область №6*/
     .area-6 {
         padding: 79px 0 100px;
     }
+
     .area-6-container-for-cards {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -134,8 +135,8 @@
         flex-direction: row;
         gap: 20px;
     }
-    /*Область №6*/
 
+    /*Область №6*/
     /*Область №7*/
     .area-7 {
         padding: 69px 0 98px;
@@ -156,8 +157,8 @@
         visibility: visible;
         height: 215px;
     }
-    /*Область №7*/
 
+    /*Область №7*/
     /*Область №8*/
     .area-8 {
         padding: 79px 0 75px;
@@ -195,23 +196,23 @@
     .Rectangle-4 {
         margin: 28px auto 56px;
     }
-    /*Область №8*/
 
+    /*Область №8*/
     /*Область №9*/
     .area-9 {
         padding: 69px 0 75px;
     }
 
-    .area-9-form-firstname, .area-9-form-budget, .area-9-form-email,.area-9-form-messenger  {
+    .area-9-form-firstname, .area-9-form-budget, .area-9-form-email, .area-9-form-messenger {
         max-width: 564px;
     }
+
     /*Область №9*/
-
-
     /*Общий*/
     .Rectangle-2 {
         margin: 28px auto 43px;
     }
+
     /*Общий*/
 }
 
